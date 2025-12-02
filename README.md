@@ -1,6 +1,6 @@
 # 🏦 Ozon Finance Automation Testing Suite
 
-![Java](https://img.shields.io/badge/Java-17-007396?logo=openjdk&logoColor=white)
+![Java](/logo/Java.svg)
 ![Selenide](https://img.shields.io/badge/Selenide-7.11.1-43B02A?logo=selenium&logoColor=white)
 ![Allure](https://img.shields.io/badge/Allure-2.19.0-EB4C42?logo=allure&logoColor=white)
 ![JUnit5](https://img.shields.io/badge/JUnit-5.10.0-25A162?logo=junit5&logoColor=white)
