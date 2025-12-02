@@ -118,3 +118,26 @@ graph TD
     style F fill:#264564
     style G fill:#264564
 ```
+
+### 📊 Статистика тестов
+
+<div align="center">
+
+```mermaid
+pie title Распределение тестов по типам (24 total)
+    "Lambda Tests" : 7
+    "Page Object Tests" : 7
+    "Web Steps Tests" : 7
+    "Other" : 3
+```
+
+```mermaid
+pie title Статус выполнения тестов
+    "Passed" : 24
+    "Failed" : 0
+    "Broken" : 0
+    "Skipped" : 0
+```
+
+</div>
+```
