@@ -121,6 +121,7 @@ graph TD
 
 ## 📁 Структура проекта
 
+```
 ozon_finance_functionality_tests/
 ├── 📂 src/test/java/
 │   ├── 📂 config/           # Конфигурация тестового окружения
@@ -144,3 +145,4 @@ ozon_finance_functionality_tests/
 ├── 📂 notifications/        # Конфигурация уведомлений
 ├── 📂 allure-results/       # Результаты Allure
 └── 📂 demo/                 # Демо материалы и скриншоты
+```
