@@ -59,7 +59,6 @@ public class PageObjectsNavigationTests {
 
         mainPage.openMainPage()
                 .clickBusinessTab()
-                .verifyCookiesBannerVisible()
                 .acceptCookiesIfVisible()
                 .hoverOverAllProductsTab()
                 .clickTariffs();
@@ -93,7 +92,7 @@ public class PageObjectsNavigationTests {
     }
 
     @Test
-    @DisplayName("Оформление карты гостю через WebSteps")
+    @DisplayName("Оформление карты гостю")
     @Tag("smoke")
     @Severity(SeverityLevel.CRITICAL)
     void getCardWithSteps() {
