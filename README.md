@@ -93,57 +93,28 @@
 ## 🏗️ Архитектура проекта
 
 ```mermaid
-graph TB
-    A[Jenkins CI/CD] --> B[Selenoid Grid]
-    B --> C[Chrome 128]
-    C --> D[Ozon Finance]
+graph TD
+    C[Chrome 128]
+    D[Ozon Finance]
     
-    E[Test Code] --> F{Test Frameworks}
-    F --> G[Lambda Tests]
-    F --> H[Page Objects]
-    F --> I[Web Steps]
+    F[Test Code] --> E[Test Frameworks]
+    E --> G[Lambda Tests]
+    E --> H[Page Objects]
+    E --> I[Web Steps]
     
     G --> J[Allure Reports]
     H --> J
     I --> J
     
     J --> K[Telegram Bot]
-    J --> L[Jenkins Artifacts]
+    J --> L[Archive Artifacts]
     
-    K --> M[📱 Telegram Channel]
-    L --> N[📊 Allure Dashboard]
+    K --> M[Telegram Channel]
+    L --> N[Allure Dashboard]
     
-    style A fill:#D24939
-    style B fill:#4B32C3
-    style J fill:#EB4C42
-    style K fill:#26A5E4
-    style M fill:#26A5E4
+    style C fill:#024939
+    style D fill:#4832C3
+    style E fill:#684642
+    style F fill:#264564
+    style G fill:#264564
 
-
----
-
-## 📁 Структура проекта
-
-ozon_finance_functionality_tests/
-├── 📂 src/test/java/
-│   ├── 📂 config/           # Конфигурация тестового окружения
-│   │   └── TestConfiguration.java
-│   ├── 📂 pages/            # Page Object паттерн
-│   │   ├── MainPage.java
-│   │   └── components/      # Переиспользуемые компоненты
-│   ├── 📂 steps/            # Web Steps для Allure
-│   │   ├── WebSteps.java
-│   │   └── BusinessSteps.java
-│   ├── 📂 tests/            # Тестовые классы (24 теста)
-│   │   ├── OzonClickTabsLambdaTests.java      # 7 тестов
-│   │   ├── PageObjectsNavigationTests.java    # 7 тестов  
-│   │   ├── WebStepsNavigationTests.java       # 7 тестов
-│   │   └── regression/      # Регрессионные тесты
-│   └── 📂 utils/            # Вспомогательные утилиты
-│       ├── Attachment.java  # Вложения в Allure
-│       └── AllureHelper.java
-├── 📂 build.gradle          # Конфигурация сборки
-├── 📂 Jenkinsfile           # CI/CD пайплайн
-├── 📂 notifications/        # Конфигурация уведомлений
-├── 📂 allure-results/       # Результаты Allure
-└── 📂 demo/                 # Демо материалы и скриншоты
