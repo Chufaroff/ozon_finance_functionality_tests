@@ -99,7 +99,8 @@ clean smoke_test
 
 ---
 
-### 📈 Allure отчеты
+## <img src="logo/Allure_Report.svg" title="Allure Report" width="4%"/> Allure-отчет
+### Overview
 
 <div align="center">
 
