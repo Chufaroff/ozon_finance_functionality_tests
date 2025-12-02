@@ -119,25 +119,23 @@ graph TD
     style G fill:#264564
 ```
 
-### 📊 Статистика тестов
+## 🛠️ Технологический стек
 
 <div align="center">
+  
+Категория	Технологии	Назначение	Версия
+Язык	https://img.shields.io/badge/Java-17-007396?style=flat-square	Основной язык программирования	17
 
-```mermaid
-pie title Распределение тестов по типам (24 total)
-    "Lambda Tests" : 7
-    "Page Object Tests" : 7
-    "Web Steps Tests" : 7
-    "Other" : 3
-```
+Тестирование	https://img.shields.io/badge/Selenide-7.11.1-43B02A?style=flat-square https://img.shields.io/badge/JUnit5-5.10.0-25A162?style=flat-square	Автоматизация и фреймворк	7.11.1 / 5.10.0
 
-```mermaid
-pie title Статус выполнения тестов
-    "Passed" : 24
-    "Failed" : 0
-    "Broken" : 0
-    "Skipped" : 0
-```
+Отчетность	https://img.shields.io/badge/Allure-2.19.0-EB4C42?style=flat-square	Профессиональные отчеты	2.19.0
+
+CI/CD	https://img.shields.io/badge/Jenkins-2.414.3-D24939?style=flat-square https://img.shields.io/badge/Docker-24.0.7-2496ED?style=flat-square	Непрерывная интеграция	2.414.3
+
+Инфраструктура	https://img.shields.io/badge/Selenoid-1.10.0-4B32C3?style=flat-square https://img.shields.io/badge/Chrome-128-4285F4?style=flat-square	Удаленный запуск тестов	1.10.0
+
+Уведомления	https://img.shields.io/badge/Telegram_API-26A5E4?style=flat-square https://img.shields.io/badge/Allure_Notifications-4.11.0-FF6B6B?style=flat-square	Мониторинг результатов	4.11.0
+
+Сборка	https://img.shields.io/badge/Gradle-7.4.1-02303A?style=flat-square https://img.shields.io/badge/Git-2.39.2-F05032?style=flat-square	Управление зависимостями	7.4.1
 
 </div>
-```
