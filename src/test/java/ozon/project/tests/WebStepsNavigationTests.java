@@ -16,6 +16,16 @@ public class WebStepsNavigationTests extends TestConfiguration {
     private WebSteps steps = new WebSteps();
 
     @Test
+    @DisplayName("Двойной клик на кнопку next в карусели слайдов")
+    @Tag("smoke")
+    @Severity(SeverityLevel.NORMAL)
+    void doubleClickOnControlsContainer() {
+        steps.openMainPage();
+        steps.doubleClickOnTheControlsContainer();
+        Attachment.addVideo();
+    }
+
+    @Test
     @DisplayName("Наведение на вкладку 'Все продукты'")
     @Tag("smoke")
     @Severity(SeverityLevel.NORMAL)

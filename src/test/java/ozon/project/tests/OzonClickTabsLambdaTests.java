@@ -12,8 +12,7 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
-import static com.codeborne.selenide.Selectors.byTagName;
-import static com.codeborne.selenide.Selectors.byText;
+import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
@@ -170,5 +169,20 @@ public class OzonClickTabsLambdaTests extends TestConfiguration {
         step("Наблюдаем форму авторизации", () -> {
             $(".form-container").shouldHave(text("Войдите в Ozon"));
         });
+    }
+
+    @Test
+    @DisplayName("Клик на кнопку next в карусели слайдов")
+    @Tag("smoke")
+    void clickButtonCaruselRole() {
+
+        step("Открываем главную страницу Ozon Finance", () -> {
+            open("https://finance.ozon.ru/");
+        });
+
+        step("Совершаем двойной клик в карусели слайдов на главной странице", () -> {
+            $("[data-testid='go-next-button']").doubleClick();
+        });
+
     }
 }

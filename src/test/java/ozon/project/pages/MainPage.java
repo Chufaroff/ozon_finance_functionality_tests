@@ -27,12 +27,19 @@ public class MainPage {
             bankInfoLink = $("a[href='/docs']"),
             clientsTab = $("a[href='/products']"),
             getCardButton = $(".product-btns"),
-            loginForm = $(".form-container");
+            loginForm = $(".form-container"),
+            carouselButton = $("[data-testid='go-next-button']");
 
     // Методы для работы с элементами
     @Step("Открываем главную страницу Ozon Finance")
     public MainPage openMainPage() {
         open("https://finance.ozon.ru/");
+        return this;
+    }
+
+    @Step("Производим двойной клик в каруселе слайдов на главной странице")
+    public MainPage doubleClickOnCarouselSlides() {
+        carouselButton.doubleClick();
         return this;
     }
 

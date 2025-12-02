@@ -18,6 +18,11 @@ public class WebSteps {
         open("https://finance.ozon.ru/");
     }
 
+    @Step("Двойной клик в карусели слайдов на главной странице")
+    public void doubleClickOnTheControlsContainer() {
+        $("[data-testid='go-next-button']").doubleClick();
+    }
+
     @Step("Наводим курсор на вкладку 'Все продукты'")
     public void hoverOverAllProductsTab() {
         $(".menu-item").hover();

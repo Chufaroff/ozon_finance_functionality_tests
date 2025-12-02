@@ -5,12 +5,25 @@ import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import ozon.project.config.TestConfiguration;
 import ozon.project.pages.MainPage;
 import ozon.project.utils.Attachment;
 
-public class PageObjectsNavigationTests {
+public class PageObjectsNavigationTests extends TestConfiguration {
 
     private MainPage mainPage = new MainPage();
+
+    @Test
+    @DisplayName("Двойной клик вперед по слайдам на главной странице")
+    @Tag("smoke")
+    @Severity(SeverityLevel.MINOR)
+    void doubleClickOnControlsContainer() {
+
+        mainPage.openMainPage()
+                .doubleClickOnCarouselSlides();
+
+        Attachment.addVideo();
+    }
 
     @Test
     @DisplayName("Наведение на вкладку 'Все продукты'")
