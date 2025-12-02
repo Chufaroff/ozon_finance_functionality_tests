@@ -23,7 +23,7 @@
 
 <div align="center">
   
-  ![Ozon Finance Главная Страница](demo/главная%20страница%20Ozon.png)
+  ![Ozon Finance Главная Страница](demo/mainpageozon.png)
   *Главная страница Ozon Finance - объект тестирования*
 
 </div>
@@ -68,7 +68,7 @@
 
 | Обзор тестов | Детали теста | Статистика |
 |--------------|--------------|-------------------|
-| ![Allure Overview](demo/Общая%20статистика%20тестов.png) | ![Test Details](demo/Шаги%20теста.png) | ![Charts](demo/график%20успешности.png) |
+| ![Allure Overview](demo/statistic.png) | ![Test Details](demo/stepstest.png) | ![Charts](demo/grafics.png) |
 | *Общая статистика 24 тестов* | *Детализация шагов выполнения* | *Графики успешности и duration* |
 
 </div>
@@ -112,34 +112,4 @@ graph TD
     style E fill:#684642
     style F fill:#264564
     style G fill:#264564
-```
-
-## 📦 Jenkins CI/CD пайплайн
-
-## 🏗️ Конфигурация Jenkins Job
-
-<div align="center">
-  
-https://demo/%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B8%2520%D0%BF%D0%B0%D0%B9%D0%BF%D0%BB%D0%B0%D0%B9%D0%BD%D0%B0%2520%D0%B2%2520Jenkins.png
-
-Настройки пайплайна в Jenkins с параметризованной сборкой
-
-</div>
-
-## 📋 Этапы пайплайна:
-
-```mermaid
-graph LR
-    A[Checkout<br>GitHub] --> B[Build<br>Gradle]
-    B --> C[Test<br>Selenoid]
-    C --> D[Report<br>Allure]
-    D --> E[Notify<br>Telegram]
-    E --> F[Archive<br>Artifacts]
-    
-    style A fill:#f9f,stroke:#333
-    style B fill:#bbf,stroke:#333
-    style C fill:#bfb,stroke:#333
-    style D fill:#fbf,stroke:#333
-    style E fill:#ffb,stroke:#333
-    style F fill:#bff,stroke:#333
 ```
