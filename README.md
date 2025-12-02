@@ -48,6 +48,29 @@
 
 ---
 
+## :computer: Использованный стек технологий
+
+<p align="center">
+<img width="6%" title="IntelliJ IDEA" src="logo/Intelij_IDEA.svg">
+<img width="6%" title="Java" src="logo/Java.svg">
+<img width="6%" title="Selenide" src="logo/Selenide.svg">
+<img width="6%" title="Selenoid" src="logo/Selenoid.svg">
+<img width="6%" title="Allure Report" src="logo/Allure_Report.svg">
+<img width="6%" title="Gradle" src="logo/Gradle.svg">
+<img width="6%" title="JUnit5" src="logo/JUnit5.svg">
+<img width="6%" title="GitHub" src="logo/GitHub.svg">
+<img width="6%" title="Jenkins" src="logo/Jenkins.svg">
+<img width="6%" title="Telegram" src="logo/Telegram.svg">
+</p>
+
+- В данном проекте автотесты написаны на языке <code>Java</code> с использованием фреймворка для тестирования Selenide.
+- В качестве сборщика был использован - <code>Gradle</code>.
+- Использованы фреймворки <code>JUnit 5</code> и [Selenide](https://selenide.org/).
+- При прогоне тестов браузер запускается в [Selenoid](https://aerokube.com/selenoid/).
+- Для удаленного запуска реализована джоба в <code>Jenkins</code> с формированием Allure-отчета и отправкой результатов в <code>Telegram</code> при помощи бота.
+
+---
+
 ## 📊 Демонстрация работы
 
 ### 🎥 Видеодемонстрация выполнения тестов
