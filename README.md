@@ -83,7 +83,7 @@ clean smoke_test
 -DbrowserSize=1920x1080
 ```
 
-### <img src="media/logo/param.svg" title="Параметры сборки" width="4%"/> Параметры сборки
+### <img src="logo/param.svg" title="Параметры сборки" width="4%"/> Параметры сборки
 
 * <code>REMOTE_DRIVER_URL</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 * <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение. По-умолчанию - <code>1920x1080</code>.
@@ -92,7 +92,7 @@ clean smoke_test
 
 
 
-## <img src="media/logo/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins
+## <img src="logo/Jenkins.svg" title="Jenkins" width="4%"/> Сборка в Jenkins
 <p align="center">
 <img title="Jenkins Build" src="demo/build_jenkins.png">
 </p>
