@@ -28,7 +28,7 @@
 
 <div align="center">
   
-  ![Ozon Finance Главная Страница](screenshots/ozon-main-page.png)
+  ![Ozon Finance Главная Страница](Снимок экрана (66).png)
   *Главная страница Ozon Finance - объект тестирования*
 
 </div>
