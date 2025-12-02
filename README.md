@@ -59,7 +59,7 @@
 
 <div align="center">
   
-  ![Видео выполнения теста](demo/test-execution.gif)
+  ![Видео выполнения теста](demo/13a10191340d47668d15f614c30c3f35.gif)
   *Демонстрация выполнения автотеста с навигацией по Ozon Finance*
 
   *Видео записывается автоматически при каждом запуске тестов в Selenoid*
@@ -72,7 +72,7 @@
 
 | Обзор тестов | Детали теста | Статистика |
 |--------------|--------------|-------------------|
-| ![Allure Overview](screenshots/allure-overview.png) | ![Test Details](screenshots/allure-test-details.png) | ![Charts](screenshots/allure-charts.png) |
+| ![Allure Overview](demo/Снимок%20экрана%20(71).png) | ![Test Details](demo/Снимок%20экрана%20(68).png) | ![Charts](demo/Снимок%20экрана%20(69).png) |
 | *Общая статистика 24 тестов* | *Детализация шагов выполнения* | *Графики успешности и duration* |
 
 </div>
